@@ -7,9 +7,11 @@
     register: result
     tags:
     - osp.smoke
+  
   - name: Curl website
     uri:
       url: "http://{{ item.public_v4 }}"
+      status_code: 200
       return_content: yes
     register: webpage
 
