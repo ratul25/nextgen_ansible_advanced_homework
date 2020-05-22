@@ -1,5 +1,5 @@
 ---
-- name: install tomcat
+  - name: install tomcat
     package:
       name: tomcat
       state: latest
